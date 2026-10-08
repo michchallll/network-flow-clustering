@@ -4,7 +4,7 @@ This project is a simple implementation of **network flow clustering** in the C 
 
 The program reads network flow records from an input file, computes distances between flows based on selected features, and repeatedly merges the closest clusters until the desired number of clusters is reached.
 
-## 🔹 How the program works:
+##  How the program works:
 
 * Each network flow initially forms its own cluster.
 * The program calculates the distance between flows using selected metrics:
@@ -18,7 +18,7 @@ The program reads network flow records from an input file, computes distances be
 * The process continues until the required number of clusters remains.
 * Final clusters are sorted by the smallest flow ID they contain.
 
-## ✨ Key Features:
+##  Key Features:
 
 * **Loading and validation** of input files.
 * **Dynamic memory allocation** for flows and clusters.
@@ -36,7 +36,7 @@ The program reads network flow records from an input file, computes distances be
   * invalid input file format
   * memory allocation failures
 
-## 🛠 Technologies Used:
+##  Technologies Used:
 
 * **C11**
 * Standard C libraries:
@@ -46,7 +46,7 @@ The program reads network flow records from an input file, computes distances be
   * `string.h`
   * `math.h`
 
-## ⚙️ Compilation:
+##  Compilation:
 
 ```bash
 cc -std=c11 -Wall -Wextra -Werror -pedantic flows.c -o flows.exe -lm
@@ -58,7 +58,7 @@ Or simply:
 make
 ```
 
-## ▶️ Usage:
+##  Usage:
 
 Without clustering:
 
@@ -78,7 +78,7 @@ Example:
 ./flows data.txt 2 1.0 1.0 1.0 1.0
 ```
 
-## 📄 Input File Format:
+##  Input File Format:
 
 The first line contains the number of flows:
 
@@ -102,7 +102,7 @@ count=4
 13 172.16.0.10 172.16.0.11 6000 25 45 0.06
 ```
 
-## 📤 Example Output:
+##  Example Output:
 
 ```text
 Clusters:
@@ -110,7 +110,7 @@ cluster 0: 10 12
 cluster 1: 11 13
 ```
 
-## 🎯 Purpose of the Project:
+##  Purpose of the Project:
 
 * Practice working with **structures and dynamic memory**
 * Learn how to process structured input files
